@@ -1,0 +1,39 @@
+.automation-card-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+
+  & > svg {
+    margin-right: 20px;
+    transition: transform linear 0.2s;
+  }
+
+  & > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0;
+
+    color: #1A1A1A;
+
+    & > span {
+      color: #0071E3;
+    }
+  }
+
+  & > button {
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.szh-accordion__item-btn[aria-expanded="false"] .automation-card-header > svg {
+   transform: rotate(180deg);
+}
